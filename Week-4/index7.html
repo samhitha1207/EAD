@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chess Board</title>
+<style>
+body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#f4f6f9;}
+.board{display:grid;grid-template-columns:repeat(8,60px);grid-template-rows:repeat(8,60px);border:4px solid #333;}
+.square{width:60px;height:60px;}
+.square:nth-child(odd){background:#ffffff;}
+.square:nth-child(even){background:#000000;}
+.board div:nth-child(16n+1),.board div:nth-child(16n+3),.board div:nth-child(16n+5),.board div:nth-child(16n+7),.board div:nth-child(16n+10),.board div:nth-child(16n+12),.board div:nth-child(16n+14),.board div:nth-child(16n+16){background:#000;}
+.board div:nth-child(16n+2),.board div:nth-child(16n+4),.board div:nth-child(16n+6),.board div:nth-child(16n+8),.board div:nth-child(16n+9),.board div:nth-child(16n+11),.board div:nth-child(16n+13),.board div:nth-child(16n+15){background:#fff;}
+</style>
+</head>
+<body>
+<div class="board">
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+</div>
+</body>
+</html>

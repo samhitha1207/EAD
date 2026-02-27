@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator UI</title>
+<style>
+body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#f4f6f9;font-family:Arial,sans-serif;}
+.calculator{width:300px;background:#222;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.display{width:100%;height:60px;background:#000;color:#0f0;text-align:right;padding:15px;font-size:24px;border-radius:5px;margin-bottom:15px;box-sizing:border-box;}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+button{padding:15px;font-size:18px;border:none;border-radius:5px;cursor:pointer;background:#444;color:white;}
+button:hover{background:#666;}
+.operator{background:#ff9500;}
+.operator:hover{background:#e08900;}
+.equal{grid-column:span 2;background:#28a745;}
+.equal:hover{background:#218838;}
+</style>
+</head>
+<body>
+<div class="calculator">
+<div class="display">0</div>
+<div class="buttons">
+<button>7</button><button>8</button><button>9</button><button class="operator">/</button>
+<button>4</button><button>5</button><button>6</button><button class="operator">*</button>
+<button>1</button><button>2</button><button>3</button><button class="operator">-</button>
+<button>0</button><button>.</button><button class="equal">=</button><button class="operator">+</button>
+</div>
+</div>
+</body>
+</html>
